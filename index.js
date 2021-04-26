@@ -28,7 +28,7 @@ let ukSterlingValue = 1
 let ukUsaDollarValue = 1.38
 let usaUkIndex = (ukUsaDollarValue - ukUsaImpliedPurchasingPower) / ukUsaImpliedPurchasingPower
 
-console.log("Mac USA-UK Index =", usaUkIndex)
+console.log("Mac USA-UK Index =", Math.round(usaUkIndex * 100) + "%")
 
 // italy index 
 let italyMacPrice = 4.98
@@ -37,7 +37,7 @@ let italyEuroValue = 1
 let italyUsaDollarValue = 1.20
 let usaItalyIndex = (italyUsaDollarValue - italyUsaImpliedPurchasingPower) / italyUsaImpliedPurchasingPower
 
-console.log("Mac USA-Italy Index =", usaItalyIndex)
+console.log("Mac USA-Italy Index =", Math.round(usaItalyIndex * 100) + "%")
 
 // france index 
 let franceMacPrice = 4.98
@@ -46,7 +46,7 @@ let franceEuroValue = 1
 let franceUsaDollarValue = 1.20
 let usaFranceIndex = (italyUsaDollarValue - franceUsaImpliedPurchasingPower) / franceUsaImpliedPurchasingPower
 
-console.log("Mac USA-France Index =", usaFranceIndex)
+console.log("Mac USA-France Index =", Math.round(usaFranceIndex * 100) + "%")
 
 // russia index 
 let russiaMacPrice = 250
@@ -56,7 +56,7 @@ let russiaUsaDollarValue = 0.01
 let usaRussiaIndex = (russiaUsaDollarValue - russiaUsaImpliedPurchasingPower) / russiaUsaImpliedPurchasingPower
 
 // mexico index 
-console.log("Mac USA-Russia Index =", usaRussiaIndex)
+console.log("Mac USA-Russia Index =", Math.round(usaRussiaIndex * 100) + "%")
 
 let mexicoMacPrice = 50
 let mexicoUsaImpliedPurchasingPower = usaMacPrice / mexicoMacPrice
@@ -64,7 +64,7 @@ let mexicoEuroValue = 1
 let mexicoUsaDollarValue = 6.54
 let usaMexicoIndex = (mexicoUsaDollarValue - mexicoUsaImpliedPurchasingPower) / mexicoUsaImpliedPurchasingPower
 
-console.log("Mac USA-Mex Index =", usaMexicoIndex)
+console.log("Mac USA-Mex Index =", Math.round(usaMexicoIndex * 100) + "%")
 
 // comparing Mex index with the others
 console.log("USA-Mex > USA-France Index =", usaMexicoIndex > usaFranceIndex)

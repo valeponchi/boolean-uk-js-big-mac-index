@@ -21,9 +21,10 @@ For example, using figures in July 2008:
 let UsaMacPrice = 3.79
 let UkMacPrice = 3.19
 let UkUsaImpliedPurchasingPower = UsaMacPrice / UkMacPrice
-let UkSterlingValue = 1 === 1.38
+let UkSterlingValue = 1
+let UsaDollarValue = 1.38
+let UsaUkIndex = (UsaDollarValue - UkUsaImpliedPurchasingPower) / UkUsaImpliedPurchasingPower
 
 
+console.log("Mac USA-UK Index =", UsaUkIndex)
 
-console.log("UkSterlingValue", UkSterlingValue)
-// console.log("£", )

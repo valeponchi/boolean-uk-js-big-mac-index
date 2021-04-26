@@ -18,6 +18,9 @@ For example, using figures in July 2008:
   - (2.00 – 1.56) / 1.56 = 28%
   - the pound was thus overvalued against the dollar by 28%
 */
+
+
+// uk index 
 let usaMacPrice = 5.66
 let ukMacPrice = 4.69
 let ukUsaImpliedPurchasingPower = usaMacPrice / ukMacPrice
@@ -25,34 +28,34 @@ let ukSterlingValue = 1
 let ukUsaDollarValue = 1.38
 let usaUkIndex = (ukUsaDollarValue - ukUsaImpliedPurchasingPower) / ukUsaImpliedPurchasingPower
 
-
 console.log("Mac USA-UK Index =", usaUkIndex)
 
+// italy index 
 let italyMacPrice = 4.98
 let italyUsaImpliedPurchasingPower = usaMacPrice / italyMacPrice
 let italyEuroValue = 1
 let italyUsaDollarValue = 1.20
 let usaItalyIndex = (italyUsaDollarValue - italyUsaImpliedPurchasingPower) / italyUsaImpliedPurchasingPower
 
-
 console.log("Mac USA-Italy Index =", usaItalyIndex)
 
+// france index 
 let franceMacPrice = 4.98
 let franceUsaImpliedPurchasingPower = usaMacPrice / franceMacPrice
 let franceEuroValue = 1
 let franceUsaDollarValue = 1.20
 let usaFranceIndex = (italyUsaDollarValue - franceUsaImpliedPurchasingPower) / franceUsaImpliedPurchasingPower
 
-
 console.log("Mac USA-France Index =", usaFranceIndex)
 
+// russia index 
 let russiaMacPrice = 250
 let russiaUsaImpliedPurchasingPower = usaMacPrice / russiaMacPrice
 let russiaEuroValue = 1
 let russiaUsaDollarValue = 0.01
 let usaRussiaIndex = (russiaUsaDollarValue - russiaUsaImpliedPurchasingPower) / russiaUsaImpliedPurchasingPower
 
-
+// mexico index 
 console.log("Mac USA-Russia Index =", usaRussiaIndex)
 
 let mexicoMacPrice = 50
@@ -61,6 +64,32 @@ let mexicoEuroValue = 1
 let mexicoUsaDollarValue = 6.54
 let usaMexicoIndex = (mexicoUsaDollarValue - mexicoUsaImpliedPurchasingPower) / mexicoUsaImpliedPurchasingPower
 
+console.log("Mac USA-Mex Index =", usaMexicoIndex)
 
-console.log("Mac USA-Mexico Index =", usaMexicoIndex)
+// comparing Mex index with the others
+console.log("USA-Mex > USA-France Index =", usaMexicoIndex > usaFranceIndex)
+console.log("USA-Mex > USA-Russia Index =", usaMexicoIndex > usaRussiaIndex)
+console.log("USA-Mex > USA-Italy Index =", usaMexicoIndex > usaItalyIndex)
+console.log("USA-Mex > USA-UK Index =", usaMexicoIndex > usaUkIndex)
+
+// comparing Italy index with the others
+console.log("USA-Italy > USA-France Index =", usaItalyIndex > usaFranceIndex)
+console.log("USA-Italy > USA-Russia Index =", usaItalyIndex > usaRussiaIndex)
+console.log("USA-Italy > USA-Mex Index =", usaItalyIndex > usaMexicoIndex)
+console.log("USA-Italy > USA-UK Index =", usaItalyIndex > usaUkIndex)
+
+// comparing UK index with the others
+console.log("USA-UK > USA-France Index =", usaUkIndex > usaFranceIndex)
+console.log("USA-UK > USA-Russia Index =", usaUkIndex > usaRussiaIndex)
+console.log("USA-UK > USA-Mex Index =", usaUkIndex > usaMexicoIndex)
+console.log("USA-UK > USA-Italy Index =", usaUkIndex > usaItalyIndex)
+
+// comparing France index with the others
+console.log("USA-France > USA-Uk Index =", usaFranceIndex > usaUkIndex)
+console.log("USA-France > USA-Russia Index =", usaFranceIndex > usaRussiaIndex)
+console.log("USA-France > USA-Mex Index =", usaFranceIndex > usaMexicoIndex)
+console.log("USA-France > USA-Italy Index =", usaFranceIndex > usaItalyIndex)
+
+
+
 

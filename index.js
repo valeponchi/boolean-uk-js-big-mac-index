@@ -18,13 +18,49 @@ For example, using figures in July 2008:
   - (2.00 – 1.56) / 1.56 = 28%
   - the pound was thus overvalued against the dollar by 28%
 */
-let UsaMacPrice = 3.79
-let UkMacPrice = 3.19
-let UkUsaImpliedPurchasingPower = UsaMacPrice / UkMacPrice
-let UkSterlingValue = 1
-let UsaDollarValue = 1.38
-let UsaUkIndex = (UsaDollarValue - UkUsaImpliedPurchasingPower) / UkUsaImpliedPurchasingPower
+let usaMacPrice = 5.66
+let ukMacPrice = 4.69
+let ukUsaImpliedPurchasingPower = usaMacPrice / ukMacPrice
+let ukSterlingValue = 1
+let ukUsaDollarValue = 1.38
+let usaUkIndex = (ukUsaDollarValue - ukUsaImpliedPurchasingPower) / ukUsaImpliedPurchasingPower
 
 
-console.log("Mac USA-UK Index =", UsaUkIndex)
+console.log("Mac USA-UK Index =", usaUkIndex)
+
+let italyMacPrice = 4.98
+let italyUsaImpliedPurchasingPower = usaMacPrice / italyMacPrice
+let italyEuroValue = 1
+let italyUsaDollarValue = 1.20
+let usaItalyIndex = (italyUsaDollarValue - italyUsaImpliedPurchasingPower) / italyUsaImpliedPurchasingPower
+
+
+console.log("Mac USA-Italy Index =", usaItalyIndex)
+
+let franceMacPrice = 4.98
+let franceUsaImpliedPurchasingPower = usaMacPrice / franceMacPrice
+let franceEuroValue = 1
+let franceUsaDollarValue = 1.20
+let usaFranceIndex = (italyUsaDollarValue - franceUsaImpliedPurchasingPower) / franceUsaImpliedPurchasingPower
+
+
+console.log("Mac USA-France Index =", usaFranceIndex)
+
+let russiaMacPrice = 250
+let russiaUsaImpliedPurchasingPower = usaMacPrice / russiaMacPrice
+let russiaEuroValue = 1
+let russiaUsaDollarValue = 0.01
+let usaRussiaIndex = (russiaUsaDollarValue - russiaUsaImpliedPurchasingPower) / russiaUsaImpliedPurchasingPower
+
+
+console.log("Mac USA-Russia Index =", usaRussiaIndex)
+
+let mexicoMacPrice = 50
+let mexicoUsaImpliedPurchasingPower = usaMacPrice / mexicoMacPrice
+let mexicoEuroValue = 1
+let mexicoUsaDollarValue = 6.54
+let usaMexicoIndex = (mexicoUsaDollarValue - mexicoUsaImpliedPurchasingPower) / mexicoUsaImpliedPurchasingPower
+
+
+console.log("Mac USA-Mexico Index =", usaMexicoIndex)
 

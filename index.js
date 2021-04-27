@@ -28,7 +28,7 @@ let ukSterlingValue = 1
 let ukUsaDollarValue = 1.38
 let usaUkIndex = (ukUsaDollarValue - ukUsaImpliedPurchasingPower) / ukUsaImpliedPurchasingPower
 
-console.log("Mac USA-UK Index =", Math.round(usaUkIndex * 100) + "%")
+console.log("Mac USA-UK Index =" + Math.round(usaUkIndex * 100) + "%")
 
 // italy index 
 let italyMacPrice = 4.98
@@ -61,7 +61,7 @@ console.log("Mac USA-Russia Index =", Math.round(usaRussiaIndex * 100) + "%")
 let mexicoMacPrice = 50
 let mexicoUsaImpliedPurchasingPower = usaMacPrice / mexicoMacPrice
 let mexicoEuroValue = 1
-let mexicoUsaDollarValue = 6.54
+let mexicoUsaDollarValue = 0.05
 let usaMexicoIndex = (mexicoUsaDollarValue - mexicoUsaImpliedPurchasingPower) / mexicoUsaImpliedPurchasingPower
 
 console.log("Mac USA-Mex Index =", Math.round(usaMexicoIndex * 100) + "%")
